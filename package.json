@@ -1,0 +1,8 @@
+{
+    "name": "crontweet",
+    "version": "0.0.0",
+    "dependencies": {
+        "twit": "~2.1.0",
+        "nthen": "~0.1.1"
+    }
+}

@@ -1,0 +1,33 @@
+module.exports = {
+    // URL of entity table results on RISCOSS server
+    baseurl: '/riscoss/wiki/gha/get/RISCOSSPlatformLayerManagerCode/EntitiesLiveTableResults',
+
+    // Port of RISCOSS server
+    port: 80,
+
+    // Hostname of RISCOSS server
+    hostname: 'riscossplatform.ow2.org',
+
+    // Where to store state between runs
+    state: __dirname + '/state.json',
+
+    // Projects which will never be tweeted about
+    blacklist: [
+        'cedricth_Slides%2D2013',
+        'Kerrick_google',
+        'cjdelisle_docs',
+        'pubnub_java',
+        'ldubost_candy'
+    ],
+
+    // Time that a project won't be tweeted again after it has been tweeted once
+    quietTime_ms: 7 * 24 * 60 * 60 * 1000,
+
+    // Configuration for the Twit library (twitter API key).
+    twitconf: {
+        consumer_key: 'xxx',
+        consumer_secret: 'xxx',
+        access_token: 'xxx',
+        access_token_secret: 'xxx'
+    }
+};
